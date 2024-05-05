@@ -9,6 +9,7 @@
 }
 :root{
     --color-principal:#f2d80c;
+    --color-secundario:#18191F;
 }
 h1{
     font-size: 50px;
@@ -19,11 +20,12 @@ header{
     display: flex;
     padding: 20px 15px;
 }
-#logo{
+#logo {
     font-family: 'Caveat';
     font-size: 42px;
     padding-left: 50px;
     width: 50%;
+
 }
 #navegador{
     width: 50%;
@@ -63,7 +65,7 @@ header{
 .texto p{
     font-size: 18px;
     line-height: 32px;
-    color: #18191F;
+    color: var(--color-secundario);
     margin-top: 16px;
     margin-bottom: 50px;
 }
@@ -76,7 +78,7 @@ header{
 }
 .btn{
     background-color: var(--color-principal);
-    color: #18191F;
+    color:  var(--color-secundario);
     width: 25px;
     padding: 15px 25px;
     border-radius:5px ;
@@ -156,7 +158,7 @@ main{
 .text1 p{
     font-size: 18px;
     line-height: 32px;
-    color: #18191F;
+    color:  var(--color-secundario);
     margin-top: 30px;
     margin-bottom: 32px;
 }
@@ -265,6 +267,62 @@ footer{
 .tarjeta p{
     text-align: center;
     width: 250px;
+}
+
+#formulario{
+    margin: 3% 20%;
+    text-align: center;
+}
+
+#formulario h1{
+    margin: 10px 0px 40px;
+}
+
+.volver{
+    font-weight: bolder;
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+form{
+    text-align: justify;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contenedor{
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor .caja{
+    height: 40px;
+    width: 80%;
+    padding: 5px;
+}
+
+label{
+    margin: 10px 0px 20px;
+    font-size: 18px;
+}
+textarea{
+    padding: 5px;
+    width: 80%; 
+}
+
+.enviar{
+    grid-column: span 2;
+    width: 30%;
+    border: 3px solid rgb(13, 13, 13);
+    background-color: rgb(27, 26, 26);
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    align-self: center;
+    margin: 50px auto;
+    font-size: large;
 }
 
 @keyframes movimiento{
@@ -440,9 +498,12 @@ footer{
         padding: 20px;
         font-size: 15px;
     }
+    #formulario{
+        margin: 3% 10%;
+    }
 }
 
-@media screen and (max-width:700px){
+@media screen and (max-width:400px){
     h1{
         font-size: 25px;
     }
@@ -500,5 +561,8 @@ footer{
     }
     #informacion{
         padding: 30px 50px;
+    }
+    #formulario{
+        margin: 3% 10%;
     }
 }
