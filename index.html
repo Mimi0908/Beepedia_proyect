@@ -11,6 +11,9 @@
 <body>
     <header>
         <h1 id="logo">Beepedia</h1>
+        <button class="menu-toggle" id="menuToggle">
+            <img src="./img/menu-regular-48.png" alt="...">
+        </button>
         <nav id="navegador">
             <ul>
                 <li id="sitio"><a href="#tipos">tipos</a></li>
@@ -187,18 +190,9 @@
         </div>
     </footer>
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var image = document.querySelector(".banner img");
-            function handleScroll() {
-                var scrollPosition = window.scrollY;
-                var newPosition = -scrollPosition / 5;
-                var newOpacity = 1 - scrollPosition / 500;
-                image.style.transform = "translateX(" + newPosition + "px)";
-                image.style.opacity = newOpacity;
-            }
-            window.addEventListener("scroll", handleScroll);
-        });
+        
     </script>
+    <script src="./main.js"></script>
 </body>
 
 </html>

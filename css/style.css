@@ -20,6 +20,15 @@ header{
     display: flex;
     padding: 20px 15px;
 }
+
+.menu-toggle{
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
 #logo {
     font-family: 'Caveat';
     font-size: 42px;
@@ -351,6 +360,39 @@ textarea{
     }
 }
 @media screen and (max-width:900px) {
+
+    .menu-toggle{
+        display: block;
+    }
+    #navegador{
+        display: none;
+        position: absolute; 
+    }
+    #navegador ul{
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    header{
+        flex-direction: row-reverse;
+        justify-content: start;
+        align-items: start;
+        width: 100%;
+        position: relative;
+    }
+    #navegador ul li{
+        margin: 5%;
+    }
+    #navegador.active{
+        display: flex;
+        margin-top: 60px;
+    }
+
+    .activo{
+        height: 60vh;
+    }
+
+
     #logo{
         width: 30%;
     }
